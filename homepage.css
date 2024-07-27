@@ -1,4 +1,4 @@
-:root {
+root {
     --brand:#B3735C;
     --black: black;
     --base-light:#c38f7c;
@@ -62,65 +62,23 @@ textarea,
 select {
 font: inherit;
 }
+/* makes bg image cover the whole page yay */
+html, body {
+    height: 100%;
+}
 
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: url("biobackground.png");
+    background-image: url("homepagebackground.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat; 
     font-family: 'Josefin Sans', sans-serif;
 }
-#rectangle {
-        width: 50%;
-        height: 60%;
-        position: absolute;
-        margin: 10%;
-        background: linear-gradient(to bottom, #B3735C, rgba(179, 115, 92, 0));
-        border-radius: 20px;
-        font-family: "Cardo", serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        color: var(--black);
-}
-    .h1 {
-        font-family: "Cardo", serif;
-        display: flex;
-        flex-direction: column; 
-        justify-content: flex-start; 
-        align-items:center; 
-        text-align: center;
-        font-size: 10%;
-        color: var(--black);
-    } 
 
-/* CODE for bio pic to apper at bottom of a rectangle - maybe dont want on the opening page. Make an about me section? 
-#rectangle::after {
-        content: '';
-        position: absolute;
-        bottom: -20%;
-        right: -10%;
-        width: 41%;
-        height: 50%;     
-        background-image: url('biopic.png'); 
-        background-size: cover; 
-        background-position: center; 
-        border-radius: 20px 0 0 0; 
-    } */
-
-    .center-screen {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        min-height: 75vh;
-    }
-
-    /* Bee animation goal: to look like it's flying randomly */
+    /* change placement of bee so its not the same as the first page!! */
     .bee {
         margin-top:100px;
         width: 15%;
@@ -146,6 +104,29 @@ body {
         100% {left:50px;transform: rotate(30deg);}
         }
 
+        .orangetree {
+            animation: treesway 8s infinite, jump 3s infinite;
+            transform-origin: 50% 100% 0;
+            position: absolute;
+            bottom: 25%;
+            left: 1.3%;
+            width: 30%;
+        }
+        @keyframes treesway {
+            0%, 100%{ transform: rotate(-1deg);}
+            50%{ transform: rotate(1deg); }
+        }
+        @keyframes jump {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-5px); 
+            }
+            60% {
+                transform: translateY(-5px); 
+            }
+        }
     .flower1 {
         animation: flower1sway 15s infinite;
         transform-origin: 50% 100% 0;
@@ -467,67 +448,4 @@ body {
             transform: scale(0.5);
         }
     }
-/* container code */
-.container {
-    position: relative;
-    margin: auto;
-    width: 200px;
-    height: 200px;
-    border: none;
-    background: none;
-    outline: none;
-}
 
-  /* button code */
-.button {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 50%;
-    bottom: 25%;
-    background: var(--base-light);
-    box-shadow: 0px 0px 16px var(--brand);
-    border-radius: 50%;
-    z-index: 3;
-    transition: all 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(-50%);
-    text-align: center;
-    font-family: "Sacramento";
-    font-size: 20px;
-    color: var(--black);
-    transition: all 0.3s ease-in-out;
-} 
-
-  /* flowerbutton code */
-.flowerbutton {
-    position: absolute;
-    width: 40%;
-    height: 50%;
-    left: 50%;
-    bottom: 25%;
-    transform: translate(-50%, 0);
-    z-index: 2;
-    transition: all 1s ease-in-out;
-    object-fit: scale-down;
-    border: none;
-    background: none;
-    outline: none;
-    display: block;
-}
-
-.flowerbutton img {
-    background: transparent;
-}
-
-  /* Hover effect for image */
-.container:hover .flowerbutton {
-    transform: translate(-50%, -50%) scale(2);
-    bottom: calc(25% - 50px);
-}
-
-:hover .button {
-    box-shadow: 0px 0px 36px var(--white);
-}
