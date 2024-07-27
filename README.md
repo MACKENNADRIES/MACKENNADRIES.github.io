@@ -6,7 +6,7 @@
 
 ### Content
  Add a short paragraph describing the features below. What aesthetic and technical choices did you make? 
-- [ ] At least one profile picture
+- [x] At least one profile picture
 - [ ] Biography (at least 100 words)
 - [ ] Functional Contact Form
 - [ ] "Projects" section
