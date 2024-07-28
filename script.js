@@ -1,3 +1,4 @@
+/* MEMORY GAME JS */
 const cards = document.querySelectorAll(".card");
 
 let matched = 0;
@@ -59,3 +60,4 @@ shuffleCard();
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+

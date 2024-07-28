@@ -81,21 +81,21 @@ body {
     /* change placement of bee so its not the same as the first page!! */
     .bee {
         margin-top:100px;
-        width: 15%;
+        width: 10%;
         position: absolute;
         transform-origin: 0% 0%; 
         animation: bee-animation 60s ease infinite; /* 60 seconds so it goes at a normal speed */
     }
     @keyframes bee-animation {
         /* Random points in an attempt to make the flying look natural */
-        0%{ left:50px;transform: rotate(30deg);}
-        10%{ left:25px;transform: rotate(15deg);}
+        0%{ left:80px;transform: rotate(50deg);}
+        10%{ left:44px;transform: rotate(65deg);}
         12%{ right:105px;transform: rotate(45deg);}
-        15%{ left:38px;transform: rotate(23deg);}
-        56%{ left:25px;transform: rotate(15deg);}
+        15%{ left:55px;transform: rotate(23deg);}
+        56%{ left:800px;transform: rotate(15deg);}
         10%{ left:500px;transform: rotate(180deg);}
         75%{ left:25px;transform: rotate(15deg);}
-        64%{ right:800px;transform: rotate(90deg);}
+        64%{ right:80px;transform: rotate(70deg);}
         30%{ right:100px;transform: rotate(15deg);}
         99%{ left:600px;transform: rotate(67deg);}
         78%{ right:400px;transform: rotate(55deg);}
@@ -105,18 +105,14 @@ body {
         }
 
         .orangetree {
-            animation: treesway 8s infinite, jump 3s infinite;
+            animation: treejump 3s infinite;
             transform-origin: 50% 100% 0;
             position: absolute;
             bottom: 25%;
             left: 1.3%;
             width: 30%;
         }
-        @keyframes treesway {
-            0%, 100%{ transform: rotate(-1deg);}
-            50%{ transform: rotate(1deg); }
-        }
-        @keyframes jump {
+        @keyframes treejump {
             0%, 20%, 50%, 80%, 100% {
                 transform: translateY(0);
             }
@@ -126,18 +122,65 @@ body {
             60% {
                 transform: translateY(-5px); 
             }
+        } 
+        .toolshed {
+            animation: shedjump 3s infinite;
+            transform-origin: 50% 100% 0;
+            position: absolute;
+            bottom: 20%;
+            left: 68%;
+            width: 20%;
+
         }
+        @keyframes shedjump {
+            0%, 30%, 60%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-2px); 
+            }
+            60% {
+                transform: translateY(-2px); 
+            }
+        }
+        .moon {
+            animation: moonjump 3s infinite;
+            transform-origin: 50% 100% 0;
+            position: absolute;
+            bottom: 80%;
+            left: 90%;
+            width: 5%;
+        }
+        @keyframes moonjump {
+            0%, 30%, 60%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-2px); 
+            }
+            60% {
+                transform: translateY(-2px); 
+            }
+        }
+
     .flower1 {
-        animation: flower1sway 15s infinite;
+        animation: flower1jump 3s infinite;
         transform-origin: 50% 100% 0;
         position: absolute;
         bottom: 0px;
         left: 5%;
-        width: 9%;
+        width: 10%;
     }
-    @keyframes flower1sway {
-        0%, 100%{ transform: rotate(-6deg);}
-        50%{ transform: rotate(6deg); }
+    @keyframes flower1jump {
+        0%, 30%, 60%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-4px); 
+        }
+        60% {
+            transform: translateY(-4px); 
+        }
     }
 
     .flower2 {
