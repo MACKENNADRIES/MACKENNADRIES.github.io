@@ -7,7 +7,7 @@ root {
     --white: white; 
 }
 
- /* CSS Reset */
+/* CSS Reset */
 
 html {
 box-sizing: border-box;
@@ -17,9 +17,9 @@ color: var(--black);
 scroll-behavior: smooth;
 }
 
- *,
- *:before,
- *:after {
+*,
+*:before,
+*:after {
 box-sizing: inherit;
 }
 
@@ -71,7 +71,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: url("homepagebackground.png");
+    background-image: url("../images/homepagebackground.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 

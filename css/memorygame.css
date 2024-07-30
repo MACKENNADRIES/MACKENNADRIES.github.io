@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('homepagebackground.png') center/cover no-repeat;
+    background: url('../images/homepagebackground.png') center/cover no-repeat;
 }
 
 .orangetree {
