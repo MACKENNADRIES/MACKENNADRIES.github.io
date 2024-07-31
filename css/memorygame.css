@@ -10,6 +10,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: url('../images/homepagebackground.png') center/cover no-repeat;
+    background-color: #412939;
 }
 
 .orangetree {
@@ -34,7 +35,7 @@ body {
     border-radius: 10px;
     background: transparent;
     z-index: 10;
-    position: relative; /* Fixed the typo here */
+    position: relative;
 }
 
 .cards, .card, .view {
