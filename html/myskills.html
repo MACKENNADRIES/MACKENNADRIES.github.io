@@ -9,8 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Script&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-        <img class="m-auto toolshed" src="../images/toolshed.png" alt="Toolshed">
 
+
+    <header>
+        <div class="hamburger-drop-down">
+            <!-- <button type="button" class="hamburger-button"> -->
+                <img class="hamburgerIcon" src="../images/hamburger-icon.png"
+                alt="Three horizontal lines, positioned one above the other." />
+                <img class="closeIcon" src="../images/closeicon.png"
+                alt="bee is close" />
+            <!-- </button> -->
+        </div>
+    <ul class="menu">
+        <li><a class="menuItem" href="../html/homepage.html">Home</a></li>
+        <li><a class="menuItem" href="../html/aboutme.html">About Me</a></li>
+        <li><a class="menuItem" href="../html/myprojects.html">My Projects</a></li>
+        <li><a class="menuItem" href="../html/memorygame.html">Memory Cards</a></li>
+        <li><a class="menuItem" href="../html/myskills.html">My Skills</a></li>
+        </ul>
+    </header>
+
+    <div id="tool-steam-container">
+    <div id="steam-container">
+        <div class="steam" id="steam1"> </div>
+        <div class="steam" id="steam2"> </div>
+        <div class="steam" id="steam3"> </div>
+        <div class="steam" id="steam4"> </div>
+        <div id="toolshed-container">
+        <img class="m-auto toolshed" src="../images/toolshed.png" alt="Toolshed">
+    </div>
+    </div>
         <img id="bee" class="bee" src="../images/bee.png" alt="Bee">
 
             <div class="wateringcan">
@@ -97,6 +125,7 @@
                     <a href="#" class="close-btn">&times;</a>
                 </div>
             </div>
+    
         <!-- Dots for decoration -->
         <div class="dot1"></div>
         <div class="dot2"></div>
@@ -106,5 +135,8 @@
         <div class="dot6"></div>
         <div class="dot7"></div>
     </div>
+
+    <script src="../js/script.js"></script>
+    
 </body>
 </html>

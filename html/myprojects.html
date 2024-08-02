@@ -5,50 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../css/myprojects.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Script&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Script&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Script&family=Playwrite+CU:wght@100..400&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-        <div class="bee">
-            <img id="bee" class="bee" src="../images/bee.png" alt="Bee">
+
+    <header>
+        <div class="hamburger-drop-down">
+            <!-- <button type="button" class="hamburger-button"> -->
+                <img class="hamburgerIcon" src="../images/hamburger-icon.png"
+                alt="Three horizontal lines, positioned one above the other." />
+                <img class="closeIcon" src="../images/closeicon.png"
+                alt="bee is close" />
+            <!-- </button> -->
         </div>
-
-        <section class="hero">
-        <h1>A repository of my projects</h1>
-        <section class="articles container">
-
-            <article>
-                    <img class="icon" src="../images/Flower1.png">
-                    <h2> Portfolio Project</h2>
-                    <p>This portfolio was designed as my first She Codes project. Using html, css and javascript, 
-                    I wanted to create my own interactive world. While this might have been a bit ambitious for my first project, 
-                    I was determined to make it happen.</p>
-                    <a href="#" class="btn-primary">Learn more</a>
-                </article>
-
-                <article>
-                        <img class="icon" src="../images/Flower2.png">
-                        <h2> Project 2</h2>
-                        <p>Watch this space!</p>
-                        <a href="#" class="btn-primary">Learn more</a>
-                </article>
-
-                <article>
-                        <img class="icon" src="../images/Flower3.png">
-                        <h2> Project 3</h2>
-                        <p>Watch this space!</p>
-                        <a href="#" class="btn-primary">Learn more</a>
-                </article>
-        </section>
-
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-        <div class="dot3"></div>
-        <div class="dot4"></div>
-        <div class="dot5"></div>
-        <div class="dot6"></div>
-        <div class="dot7"></div>
-        
-    </body>
-    </html>
+    <ul class="menu">
+        <li><a class="menuItem" href="../html/homepage.html">Home</a></li>
+        <li><a class="menuItem" href="../html/aboutme.html">About Me</a></li>
+        <li><a class="menuItem" href="../html/myprojects.html">My Projects</a></li>
+        <li><a class="menuItem" href="../html/memorygame.html">Memory Cards</a></li>
+        <li><a class="menuItem" href="../html/myskills.html">My Skills</a></li>
+        </ul>
+    </header>
     
+    <div>
+        <img id="bee" class="bee" src="../images/bee.png" alt="Bee">
+    </div>
+
+    <header class="page-header">
+        <h1 class="page-title">A repository of my projects</h1>
+    </header>
+
+<article class="Project1">
+    <div class="overlay1">
+        <img class="flower-img" src="../images/Flower1.png" alt="Flower">
+        <!-- <img class="overlay-img" id="over1" src="../images/Project1.png" alt="Overlay"> -->
+        <h2>Portfolio Project</h2>
+        <p>This portfolio was designed as my first She Codes project...</p>
+        <a href="#" class="btn-primary">Learn more</a>
+    </div>
+</article>
+
+<article class="Project2">
+    <div class="overlay2">
+        <img class="flower-img" src="../images/Flower6.png" alt="Flower">
+        <!-- <img class="overlay-img" id="over2" src="../images/Project2.png" alt="Overlay"> -->
+        <h2>Project 2</h2>
+        <p>Watch this space!</p>
+        <a href="#" class="btn-primary">Learn more</a>
+    </div>
+</article>
+
+<article class="Project3">
+    <div class="overlay3">
+        <img class="flower-img" src="../images/Flower9.png" alt="Flower">
+        <h2>Project 3</h2>
+        <p>Watch this space!</p>
+        <a href="#" class="btn-primary">Learn more</a>
+    </div>
+</article>
+    <!-- </section> -->
+
+    <!-- Dots -->
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+    <div class="dot3"></div>
+    <div class="dot4"></div>
+    <div class="dot5"></div>
+    <div class="dot6"></div>
+    <div class="dot7"></div>
+</body>
+</html>
