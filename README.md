@@ -14,16 +14,16 @@
 ​
 ### Technical
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
-- [ ] At least 2 web pages.
-- [ ] Version controlled with Git
-- [ ] Deployed on GitHub pages.
+- [x] At least 2 web pages.
+- [x] Version controlled with Git
+- [x] Deployed on GitHub pages.
 - [ ] Implements responsive design principles.
 - [ ] Uses semantic HTML.
 
 ### Bonus (optional)
  Add a short paragraph describing the features below, if you included any. 
-- [ ] Different styles for active, hover and focus states.
-- [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
+- [x] Different styles for active, hover and focus states.
+- [x] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
 ​
 ### Screenshots
 > Please include the following:

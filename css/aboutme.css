@@ -109,14 +109,14 @@ body {
 
 
         .page-header {
-            background-image: url("../images/flowerborder.png");
+            background-image: url(../images/flowerborder.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: auto;
             position: relative;
-            padding: 150px;
+            padding: 165px;
             text-align: center;
+            /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
             margin-bottom: 15px;
-            z-index: 0;
         }
         
         .page-title {
@@ -181,9 +181,17 @@ article {
     background-image: url("../images/Project3.png");
 }
 
+.about-me{ 
+    background:linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));
+    position:relative;
+    /* display: block; */
+    margin: auto;
+    margin-bottom: 10%;
+    width: 50%;
+    border-radius: 5%;
+}
 
-
-.Project1, .Project2, .Project3 {
+.experience-my, .work-my {
     background-color: var(--base-light);
     position:relative;
     /* display: block; */
@@ -191,10 +199,19 @@ article {
     margin-bottom: 10%;
     width: 50%;
     border-radius: 5%;
-
 }
-
-
+.bio-pic {
+        content: '';
+        position: absolute;
+        bottom: -15%;
+        right: -15%;
+        width: 40%;
+        height: 40%;
+        background-image: url(../images/biopic.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px 0 0 0;
+    }
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 {
     border-radius: 50%;
     margin: 10px;
@@ -233,113 +250,3 @@ article {
     background-color: var(--purple-dark); 
 }
 
-/* 
-.articles {
-    display: block; 
-    justify-content: space-around;
-}
-
-
-#hi1 {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.Project2 {
-    position: relative;
-}
-
-.Project3 {
-    position: relative;
-}
-.Project1, .Project2, .Project3 {
-background-color: var(--base-light);
-position: relative;
-margin: 10%;
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 10%;
-
-}
-
-
-
-/* Overlay styles */
-/* .overlay {
-    position: relative;
-    text-align: center;
-    color: var(--base-light);
-    border-radius: 10px;
-    overflow: hidden;
-} */
-/* 
-.overlay .flower-img {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 20%;
-    height: 20%;
-    object-fit: contain; 
-    z-index: 2; 
-}
-
-.overlay .overlay-img {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-
-}
-
-.overlay h2 {
-    margin-bottom: 10px;
-    z-index: 3;
-    color: var(--white);
-}
-
-.overlay p {
-    margin-bottom: 10px;
-    z-index: 4;
-    color: var(--white);
-}
-
-.overlay .btn-primary {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--brand);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    z-index: 5;
-}
-
-.overlay .btn-primary:hover {
-    background-color: var(--purple-dark); 
-}
-
-.dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 {
-    border-radius: 50%;
-    margin: 10px;
-    height: 20px; 
-    width: 20px; 
-    animation: pulse 2s infinite;
-    transform-origin: center;
-    position: absolute;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.5);
-    }
-    50% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.5);
-    }
-} */ 
