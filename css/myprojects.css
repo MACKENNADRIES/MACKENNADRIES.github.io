@@ -137,76 +137,116 @@ p {
             0%, 100% { transform: rotate(-6deg); }
             50% { transform: rotate(6deg); }
         }
-.overlay-img {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-image: url("../images/Project1.png");
-}
-article {
-    /* display: block; */
-    /* justify-content: space-around; */
-    position:absolute;
-    width: 100%;
-    /* height: 50%; */
-}
-
-.flower-img { 
-        position: absolute;
-        top: 20%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); /* Center the image */
-        max-width: 20%;
-        max-height: 20%;
-        object-fit: contain; 
-    }
-
-.overlay1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding:40%;
-    height: 50%; 
-    background-image: url("../images/Project1.png");
-}
-
-.overlay2 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding:40%;
-    height: 50%; 
-    background-image: url("../images/Project2.png");
-}
-
-.overlay3 {
-    background-size: contain;
-    position: relative;
-    padding:40%;
-    height: 50%; 
-    background-image: url("../images/Project3.png");
-}
-
-
-
-.Project1, .Project2, .Project3 {
-    background-color: var(--base-light);
-    position:relative;
-    /* display: block; */
-    margin: auto;
-    margin-bottom: 10%;
-    width: 50%;
-    border-radius: 5%;
-
-}
+        .text-container {
+            position: relative; /* Ensure text is positioned relative to the container */
+            /* padding: 10px; */
+            text-align: center;
+            z-index: 1; /* Make sure text appears above the image */
+            margin-top: 20%; /* Ensure text appears below the image */
+            /* Adjust margin-top if needed to ensure spacing between text and image */
+        }
+        .project-one-container,
+        .project-two-container,
+        .project-three-container {
+            background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));
+            position: relative;
+            margin: auto;
+            margin-bottom: 10%;
+            width: 50%;
+            border-radius: 5%;
+        }
+        
+        .project-one-container h1,
+        .project-two-container h1,
+        .project-three-container h1 {
+            font-family: "Aboreto", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 5em;
+            margin-bottom: 0.1em;
+        }
+        
+        .project-one-container h2,
+        .project-two-container h2,
+        .project-three-container h2  {
+            font-family: "Sacramento", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 4em;
+            margin-top: 0.1em;
+        }
+        
+        .project-one-container p,
+        .project-two-container p,
+        .project-three-container p {
+            font-family: "Gotu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .overlay1{
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex; /* Use flex to arrange child elements */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            padding: 10px;
+            height: 100vh; /* Full viewport height */
+            background-image: url("../images/Project1.png");
+        }
+        .overlay1 img {
+            position: absolute; /* Position image absolutely within the container */
+            top: 10px; /* Adjust top to create space from the top of the container */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center the image */
+            max-width: 20%; /* Ensure image does not exceed container width */
+            max-height: 20%; /* Ensure image does not exceed container height */
+            object-fit: contain; /* Maintain aspect ratio */
+        }
+        .overlay2{
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex; /* Use flex to arrange child elements */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            padding: 10px;
+            height: 100vh; /* Full viewport height */
+            background-image: url("../images/Project2.png");
+        }
+        .overlay2 img {
+            position: absolute; /* Position image absolutely within the container */
+            top: 10px; /* Adjust top to create space from the top of the container */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center the image */
+            max-width: 20%; /* Ensure image does not exceed container width */
+            max-height: 20%; /* Ensure image does not exceed container height */
+            object-fit: contain; /* Maintain aspect ratio */
+        }
+        .overlay3{
+            background-size: contain;
+            position: relative;
+            display: flex; /* Use flex to arrange child elements */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            padding: 10px;
+            height: 100vh; /* Full viewport height */
+            background-image: url("../images/Project3.png");
+        }
+        .overlay3 img {
+            position: absolute; /* Position image absolutely within the container */
+            top: 10px; /* Adjust top to create space from the top of the container */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center the image */
+            max-width: 20%; /* Ensure image does not exceed container width */
+            max-height: 20%; /* Ensure image does not exceed container height */
+            object-fit: contain; /* Maintain aspect ratio */
+        }
 
 article:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.2); 
 }
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 {
     border-radius: 50%;
