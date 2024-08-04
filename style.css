@@ -40,7 +40,6 @@ body {
     background: url("images/biobackground.png") center/cover no-repeat;
     font-family: 'Gotu', sans-serif;
 }
-
 /* Media Queries */
 @media (min-width: 768px) {
     body { font-size: 16px; }
@@ -78,6 +77,35 @@ body {
 
     .button { width: 100px; height: 100px; }
     .flowerbutton { width: 40%; height: 40%; }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body { 
+        font-size: 14px !important; 
+    }
+
+    #rectangle {
+        width: 90% !important;
+        height: 60% !important;
+    }
+
+    #welcome-title h1 { 
+        font-size: 40px !important; 
+    }
+    #welcome-title h2 { 
+        font-size: 20px !important; 
+    }
+
+    .container, .button, .flowerbutton {
+        margin-top: 15% !important;
+    }
+    .container {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .button { width: 100px; height: 100px; }
+    .flowerbutton { width: 35%; height: 35%; }
 }
 
 /* Layout and Styling */
