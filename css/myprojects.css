@@ -65,31 +65,45 @@ p {
         100% {left:50px;transform: rotate(30deg);}
         }
 
-
         .page-header {
             position: relative;
-            padding: 100px 20px; /* Adjust padding for better spacing */
+        
+        /* Ensure flowers don't overflow the header */
+        }
+        .title-container {
+            margin-top: 2%;
+            padding-bottom: 150px; /* Adjust padding for better spacing */
             text-align: center;
             color: var(--white); /* Ensure text color contrasts with background */
-            margin-bottom: 30px; /* Increase margin for separation from content */
-            z-index: 0;
-            border-bottom: 5px solid var(--base-light); /* Add a border for emphasis */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
-            overflow: hidden; /* Ensure flowers don't overflow the header */
+            overflow: hidden; 
+            align-items: center; /* Center align items vertically */
+            gap: 1em; /* Space between titles */
+            /* margin-bottom: 20px; */
         }
-        
         .page-title {
             font-family: "Aboreto", system-ui;
             font-weight: 400;
             font-style: normal;
             font-size: 4rem; /* Increase font size for prominence */
             color: var(--black); /* Use white color for contrast */
-            margin-bottom: 20px; /* Increase space below the title */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            display: inline;/* Add text shadow for better readability */
         }
-        
+        .second-title {
+            font-family: "Sacramento", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 4em;
+            color: var(--black); /* Use white color for contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            display: inline;/* Add text shadow for better readability */
+        }
         /* Flower bed container */
         .flower-bed {
+            margin-bottom: 30px; /* Increase margin for separation from content */
+            z-index: 0;
+            border-bottom: 5px solid var(--base-light); /* Add a border for emphasis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
             position: absolute;
             bottom: 0;
             left: 0;
@@ -97,7 +111,6 @@ p {
             height: 100px; /* Adjust height as needed */
             pointer-events: none; /* Ensure flowers don't interfere with other elements */
         }
-        
         /* Common flower styles */
         .flower {
             position: absolute;
