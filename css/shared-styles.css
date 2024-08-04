@@ -1,0 +1,153 @@
+:root {
+    --brand: #B3735C;
+    --black: black;
+    --base-light: #c38f7c;
+    --purple-light: #A293AD;
+    --purple-dark: #7566A0;
+    --white: white; 
+}
+
+/* CSS Reset */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.hamburger-drop-down {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    cursor: pointer;
+    width: 2.5%;
+    height: 2.5%;
+}
+.closeIcon {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+}
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: center; */
+    /* background-repeat: no-repeat;  */
+    background-image: url("../images/dropdownborder.png");
+    /* bottom: 0; */
+    z-index: 10;
+    color: white;
+    opacity: 70%;
+    list-style: none;
+    padding-top: 4rem;
+}  
+
+.showMenu {
+    transform: translateY(0);
+}
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Aboreto", system-ui; 
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+ul{
+    background-color: white;
+    /* background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));  */
+}
+
+@media (max-width: 480px) {
+    .hamburger-drop-down {
+        width: 15%;
+        height: 15%;
+    }
+
+    .menu {
+        padding-top: 1rem;
+    }
+
+    .menuItem {
+        margin: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-drop-down {
+        width: 10%;
+        height: 10%;
+    }
+
+    .menu {
+        padding-top: 2rem;
+    }
+
+    .menuItem {
+        margin: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}

@@ -26,257 +26,195 @@ body {
     background-size: contain;
     background-position: center;
 }
+
 h2 {
     font-family: "Aboreto", system-ui;
     font-weight: 400;
-    font-style: normal;
 }
 
 p {
     font-family: "Gotu", sans-serif;
-    font-weight: 400;
-    font-style: normal;  
+    font-weight: 400;  
 }
 
+.bee {
+    top: 30%;
+    margin-top: 200px;
+    width: 2%;
+    position: absolute;
+    transform-origin: 0% 0%;
+    animation: bee-animation 60s ease infinite;
+}
 
-.hamburger-drop-down {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    cursor: pointer;
-    width: 2.5%;
-    height: 2.5%;
+@keyframes bee-animation {
+    0% { left:50px; transform: rotate(30deg); }
+    10% { left:25px; transform: rotate(15deg); }
+    12% { top:10px; transform: rotate(45deg); }
+    15% { top:400px; transform: rotate(23deg); }
+    56% { left:25px; transform: rotate(15deg); }
+    10% { left:500px; transform: rotate(180deg); }
+    75% { left:25px; transform: rotate(15deg); }
+    64% { right:800px; transform: rotate(90deg); }
+    30% { right:100px; transform: rotate(15deg); }
+    99% { left:600px; transform: rotate(67deg); }
+    78% { right:400px; transform: rotate(55deg); }
+    85% { right:25px; transform: rotate(15deg); }
+    50% { left:300px; transform: rotate(-360deg); }
+    100% { left:50px; transform: rotate(30deg); }
 }
-.closeIcon {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    display: none;
+
+.page-header {
+    position: relative;
 }
-.menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
+
+.title-container {
+    margin-top: 2%;
+    padding-bottom: 150px;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden; 
+    align-items: center;
+    gap: 1em;
+}
+
+.page-title {
+    font-family: "Aboreto", system-ui;
+    font-size: 4rem;
+    color: var(--black);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline;
+}
+
+.second-title {
+    font-family: "Sacramento", cursive;
+    font-size: 4em;
+    color: var(--black);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline;
+}
+
+.flower-bed {
+    margin-bottom: 30px;
+    z-index: 0;
+    border-bottom: 5px solid var(--base-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
     left: 0;
     right: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-position: center; */
-    /* background-repeat: no-repeat;  */
-    background-image: url("../images/dropdownborder.png");
-    /* bottom: 0; */
-    z-index: 10;
-    color: var(--base-light);
-    list-style: none;
-    padding-top: 4rem;
-}  
-
-.showMenu {
-    transform: translateY(0);
-}
-.menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: #000000;
-    text-decoration: none;
+    height: 100px;
+    pointer-events: none;
 }
 
-.menuItem:hover {
-    text-decoration: underline;
-    text-decoration-color: #000000;
+.flower {
+    position: absolute;
+    bottom: 0;
+    transform-origin: 50% 100%;
+    width: 5%;
+    animation: sway 15s infinite;
 }
-.hamburgerIcon {
-    width: 100%
-}
-ul{
-    background-color: var(--white);
-    /* background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));  */
-}
-    /* Bee animation goal: to look like it's flying randomly */
-    .bee {
-        top: 30%;
-        margin-top: 200px;
-        width: 2%;
-        position: absolute;
-        transform-origin: 0% 0%; 
-        animation: bee-animation 60s ease infinite; /* 60 seconds so it goes at a normal speed */
-    }
-    @keyframes bee-animation {
-        /* Random points in an attempt to make the flying look natural */
-        0%{ left:50px;transform: rotate(30deg);}
-        10%{ left:25px;transform: rotate(15deg);}
-        12%{ top:10px;transform: rotate(45deg);}
-        15%{ top:400px;transform: rotate(23deg);}
-        56%{ left:25px;transform: rotate(15deg);}
-        10%{ left:500px;transform: rotate(180deg);}
-        75%{ left:25px;transform: rotate(15deg);}
-        64%{ right:800px;transform: rotate(90deg);}
-        30%{ right:100px;transform: rotate(15deg);}
-        99%{ left:600px;transform: rotate(67deg);}
-        78%{ right:400px;transform: rotate(55deg);}
-        85%{ right:25px;transform: rotate(15deg);}
-        50% {left:300px;transform: rotate(-360deg);}
-        100% {left:50px;transform: rotate(30deg);}
-        }
 
+.flower1 { left: 5%; }
+.flower2 { left: 15%; }
+.flower3 { left: 25%; }
+.flower4 { left: 35%; }
+.flower5 { left: 45%; }
+.flower6 { left: 55%; }
+.flower7 { left: 65%; }
+.flower8 { left: 75%; }
+.flower9 { left: 85%; }
+.flower10 { left: 95%; }
 
-        .page-header {
-            position: relative;
-            padding: 100px 20px; /* Adjust padding for better spacing */
-            text-align: center;
-            color: var(--white); /* Ensure text color contrasts with background */
-            margin-bottom: 30px; /* Increase margin for separation from content */
-            z-index: 0;
-            border-bottom: 5px solid var(--base-light); /* Add a border for emphasis */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
-            overflow: hidden; /* Ensure flowers don't overflow the header */
-        }
-        
-        .page-title {
-            font-family: "Aboreto", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 4rem; /* Increase font size for prominence */
-            color: var(--black); /* Use white color for contrast */
-            margin-bottom: 20px; /* Increase space below the title */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
-        }
-        
-        /* Flower bed container */
-        .flower-bed {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100px; /* Adjust height as needed */
-            pointer-events: none; /* Ensure flowers don't interfere with other elements */
-        }
-        
-        /* Common flower styles */
-        .flower {
-            position: absolute;
-            bottom: 0;
-            transform-origin: 50% 100%;
-            width: 5%; /* Adjust width as needed */
-            animation: sway 15s infinite; /* Apply the sway animation */
-        }
-        
-        /* Specific positions for each flower */
-        .flower1 { left: 5%; }
-        .flower2 { left: 15%; }
-        .flower3 { left: 25%; }
-        .flower4 { left: 35%; }
-        .flower5 { left: 45%; }
-        .flower6 { left: 55%; }
-        .flower7 { left: 65%; }
-        .flower8 { left: 75%; }
-        .flower9 { left: 85%; }
-        .flower10 { left: 95%; }
-        
-        /* Flower sway animation */
-        @keyframes sway {
-            0%, 100% { transform: rotate(-6deg); }
-            50% { transform: rotate(6deg); }
-        }
-.overlay-img {
+@keyframes sway {
+    0%, 100% { transform: rotate(-6deg); }
+    50% { transform: rotate(6deg); }
+}
+
+.text-container {
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-image: url("../images/Project1.png");
-}
-article {
-    /* display: block; */
-    /* justify-content: space-around; */
-    position:absolute;
-    width: 100%;
-    /* height: 50%; */
+    text-align: center;
+    z-index: 1;
+    margin-top: 20%;
 }
 
-.flower-img { 
-        position: absolute;
-        top: 20%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); /* Center the image */
-        max-width: 20%;
-        max-height: 20%;
-        object-fit: contain; 
-    }
-
-.overlay1 {
-    background-repeat: no-repeat;
-    background-size: cover;
+.project-one-container,
+.project-two-container,
+.project-three-container {
+    background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));
     position: relative;
-    padding:40%;
-    height: 50%; 
-    background-image: url("../images/Project1.png");
-}
-
-.overlay2 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding:40%;
-    height: 50%; 
-    background-image: url("../images/Project2.png");
-}
-
-.overlay3 {
-    background-size: contain;
-    position: relative;
-    padding:40%;
-    height: 50%; 
-    background-image: url("../images/Project3.png");
-}
-
-
-
-.Project1, .Project2, .Project3 {
-    background-color: var(--base-light);
-    position:relative;
-    /* display: block; */
     margin: auto;
     margin-bottom: 10%;
     width: 50%;
     border-radius: 5%;
+}
 
+.project-one-container h1,
+.project-two-container h1,
+.project-three-container h1 {
+    font-family: "Aboreto", system-ui;
+    font-size: 5em;
+    margin-bottom: 0.1em;
+}
+
+.project-one-container h2,
+.project-two-container h2,
+.project-three-container h2 {
+    font-family: "Sacramento", cursive;
+    font-size: 4em;
+    margin-top: 0.1em;
+}
+
+.project-one-container p,
+.project-two-container p,
+.project-three-container p {
+    font-family: "Gotu", sans-serif;
+}
+
+.overlay1, .overlay2, .overlay3 {
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+}
+
+.overlay1 { background-image: url("../images/Project1.png"); }
+.overlay2 { background-image: url("../images/Project2.png"); }
+.overlay3 { background-image: url("../images/Project3.png"); }
+
+.overlay1 img, .overlay2 img, .overlay3 img {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 20%;
+    max-height: 20%;
+    object-fit: contain;
 }
 
 article:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.2);
 }
+
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 {
     border-radius: 50%;
     margin: 10px;
-    height: 20px; 
-    width: 20px; 
+    height: 20px;
+    width: 20px;
     animation: pulse 2s infinite;
     transform-origin: center;
     position: absolute;
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(0.5);
-    }
-    50% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.5);
-    }
-} 
-
+    0% { transform: scale(0.5); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.5); }
+}
 
 .btn-primary {
     display: inline-block;
@@ -290,7 +228,7 @@ article:hover {
 }
 
 .btn-primary:hover {
-    background-color: var(--purple-dark); 
+    background-color: var(--purple-dark);
 }
 
 .page-footer {
@@ -308,12 +246,12 @@ article:hover {
 }
 
 .footer-images {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .footer-images a {
     display: inline-block;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .footer-images img {
@@ -323,116 +261,5 @@ article:hover {
 
 .footer-text {
     color: white;
-    margin: 5px 0; 
+    margin: 5px 0;
 }
-
-/* 
-.articles {
-    display: block; 
-    justify-content: space-around;
-}
-
-
-#hi1 {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.Project2 {
-    position: relative;
-}
-
-.Project3 {
-    position: relative;
-}
-.Project1, .Project2, .Project3 {
-background-color: var(--base-light);
-position: relative;
-margin: 10%;
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 10%;
-
-}
-
-
-
-/* Overlay styles */
-/* .overlay {
-    position: relative;
-    text-align: center;
-    color: var(--base-light);
-    border-radius: 10px;
-    overflow: hidden;
-} */
-/* 
-.overlay .flower-img {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 20%;
-    height: 20%;
-    object-fit: contain; 
-    z-index: 2; 
-}
-
-.overlay .overlay-img {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-
-}
-
-.overlay h2 {
-    margin-bottom: 10px;
-    z-index: 3;
-    color: var(--white);
-}
-
-.overlay p {
-    margin-bottom: 10px;
-    z-index: 4;
-    color: var(--white);
-}
-
-.overlay .btn-primary {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--brand);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    z-index: 5;
-}
-
-.overlay .btn-primary:hover {
-    background-color: var(--purple-dark); 
-}
-
-.dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 {
-    border-radius: 50%;
-    margin: 10px;
-    height: 20px; 
-    width: 20px; 
-    animation: pulse 2s infinite;
-    transform-origin: center;
-    position: absolute;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.5);
-    }
-    50% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.5);
-    }
-} */ 
