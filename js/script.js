@@ -1,4 +1,4 @@
-/* MEMORY GAME JS */
+
 const cards = document.querySelectorAll(".card");
 
 let matched = 0;
@@ -61,3 +61,28 @@ cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
 
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburgerDropDown = document.querySelector(".hamburger-drop-down");
+const closeIcon = document.querySelector(".closeIcon");
+const hamburgerIcon = document.querySelector(".hamburgerIcon");
+
+function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu"); // Correct usage of remove instead of replace
+        closeIcon.style.display = "none";
+        hamburgerIcon.style.display = "block";
+    } else {
+        menu.classList.add("showMenu");
+        closeIcon.style.display = "block";
+        hamburgerIcon.style.display = "none";
+        
+
+    }
+}
+
+hamburgerDropDown.addEventListener("click", toggleMenu);
+
+menuItems.forEach(function(menuItem) {
+    menuItem.addEventListener("click", toggleMenu);
+});
