@@ -22,10 +22,81 @@ html {
 body {
     margin: 0;
     padding: 0;
+    position: relative;
     background-image: url("../images/biobackground.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    font-family: 'Josefin Sans', sans-serif;
+}
+.page-header {
+    position: relative;
+    padding: 100px 20px; /* Adjust padding for better spacing */
+    text-align: center;
+    color: var(--white); /* Ensure text color contrasts with background */
+    margin-bottom: 30px; /* Increase margin for separation from content */
+    z-index: 0;
+    border-bottom: 5px solid var(--base-light); /* Add a border for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+    overflow: hidden; /* Ensure flowers don't overflow the header */
+}
+.title-container {
+    align-items: center; /* Center align items vertically */
+    gap: 1em; /* Space between titles */
+    margin-bottom: 20px;
+}
+.page-title {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem; /* Increase font size for prominence */
+    color: var(--black); /* Use white color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    display: inline;/* Add text shadow for better readability */
+}
+
+.second-title {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    color: var(--black); /* Use white color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    display: inline;/* Add text shadow for better readability */
+}
+/* Flower bed container */
+.flower-bed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px; /* Adjust height as needed */
+    pointer-events: none; /* Ensure flowers don't interfere with other elements */
+}
+
+/* Common flower styles */
+.flower {
+    position: absolute;
+    bottom: 0;
+    transform-origin: 50% 100%;
+    width: 5%; /* Adjust width as needed */
+    animation: sway 15s infinite; /* Apply the sway animation */
+}
+
+/* Specific positions for each flower */
+.flower1 { left: 5%; }
+.flower2 { left: 15%; }
+.flower3 { left: 25%; }
+.flower4 { left: 35%; }
+.flower5 { left: 45%; }
+.flower6 { left: 55%; }
+.flower7 { left: 65%; }
+.flower8 { left: 75%; }
+.flower9 { left: 85%; }
+.flower10 { left: 95%; }
+
+/* Flower sway animation */
+@keyframes sway {
+    0%, 100% { transform: rotate(-6deg); }
+    50% { transform: rotate(6deg); }
 }
 
 .hamburger-drop-down {
@@ -80,6 +151,13 @@ body {
     text-decoration: underline;
     text-decoration-color: #000000;
 }
+.hamburgerIcon {
+    width: 100%
+}
+ul{
+    background-color: var(--white);
+    /* background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));  */
+}
     /* Bee animation goal: to look like it's flying randomly */
     .bee {
         top: 30%;
@@ -108,23 +186,6 @@ body {
         }
 
 
-        .page-header {
-            background-image: url(../images/flowerborder.png);
-            background-repeat: no-repeat;
-            background-size: auto;
-            position: relative;
-            padding: 165px;
-            text-align: center;
-            /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
-            margin-bottom: 15px;
-        }
-        
-        .page-title {
-            font-size: 3rem; /* Adjust size as needed */
-            color: var(--black); /* Use your custom color variable */
-            margin-bottom: 15px;
-        }
-
 
 .overlay-img {
     position: relative;
@@ -146,22 +207,13 @@ article {
 
 .flower-img { 
         position: absolute;
-        top: 20%; 
+        top: 10%; 
         left: 50%; 
         transform: translate(-50%, -50%); /* Center the image */
         max-width: 20%;
         max-height: 20%;
         object-fit: contain; 
     }
-
-.overlay1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding:40%;
-    height: 50%; 
-    background-image: url("../images/Project1.png");
-}
 
 .overlay2 {
     background-repeat: no-repeat;
@@ -180,6 +232,17 @@ article {
     height: 50%; 
     background-image: url("../images/Project3.png");
 }
+.overlay1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    padding: 10px;
+    height: 50%; 
+    background-image: url("../images/Project1.png");
+}
+.text-container { 
+    padding: 10px;
+}
 
 .about-me{ 
     background:linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));
@@ -189,6 +252,34 @@ article {
     margin-bottom: 10%;
     width: 50%;
     border-radius: 5%;
+}
+.mybio-pic {
+    position: absolute;
+    top: 15%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center the image */
+    max-width: 100%;
+    max-height: 40%;
+    object-fit: contain; 
+}
+.about-me h1 {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    margin-bottom: 0.1em;
+}
+.about-me h2 {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    margin-top: 0.1em;
+}
+.about-me p {
+    font-family: "Gotu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .experience-my, .work-my {
@@ -200,18 +291,7 @@ article {
     width: 50%;
     border-radius: 5%;
 }
-.bio-pic {
-        content: '';
-        position: absolute;
-        bottom: -15%;
-        right: -15%;
-        width: 40%;
-        height: 40%;
-        background-image: url(../images/biopic.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px 0 0 0;
-    }
+
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 {
     border-radius: 50%;
     margin: 10px;

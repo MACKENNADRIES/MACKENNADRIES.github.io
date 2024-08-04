@@ -68,8 +68,6 @@ html, body {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-image: url("../images/homepagebackground.png");
     background-size: cover;
     background-position: center;
@@ -77,6 +75,12 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     z-index: 0;
     background-color: #412939;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .hamburger-drop-down {
@@ -130,6 +134,22 @@ body {
 .menuItem:hover {
     text-decoration: underline;
     text-decoration-color: #000000;
+}
+.intro-header {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    padding: 20px;
+}
+
+.page-intro {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem; /* Large font size */
+    color: white;   /* Color of the text */
+    margin: 0;
+}
+#contentpage {
+    flex: 1; /* Ensures that the content area takes up available space */
 }
 
     /* change placement of bee so its not the same as the first page!! */
@@ -189,9 +209,9 @@ body {
 
         .rake a img {
             position: absolute;
-            width: 6%;
-            bottom: 40%;
-            left: 56%;
+            width: 25%;
+            bottom: 30%;
+            left: 0.5%;
             z-index: 3;
             animation: jump 3s infinite;
             transform-origin: 50% 100% 0;
@@ -263,12 +283,27 @@ body {
             z-index: 6; 
         }
         
-        .content {
+        .skillcontent {
             position: relative;
-            background: linear-gradient(to bottom,#A293AD,white);
+            background-image: url("../images/headerbackground.png");
+            background-repeat: no-repeat; 
+            background-color: white; 
+            background-size: cover;
+            opacity: 0.7;
+            border-radius: 10px; 
             padding: 1em 2em;
             border-radius: 4px;
             text-align: center;
+        }
+        .skillcontent h1 {
+            font-family: "Aboreto", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .skillcontent p {
+            font-family: "Gotu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
         
         .modal:target {
@@ -338,3 +373,38 @@ body {
             opacity: 0;
             }
         }
+        .page-footer {
+            background-color: #412939;
+            padding: 20px;
+            margin-top: auto;
+            text-align: center;
+            top: 100%;
+            font-family: "Gotu", sans-serif;
+
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-images {
+            margin-bottom: 1px; 
+        }
+        
+        .footer-images a {
+            display: inline-block;
+            margin: 0 10px; 
+        }
+        
+        .footer-images img {
+            width: 40px;
+            height: auto;
+        }
+        
+        .footer-text {
+            color: white;
+            margin: 5px 0; 
+        }
+        

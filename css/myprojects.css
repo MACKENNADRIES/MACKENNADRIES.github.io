@@ -23,10 +23,21 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("../images/biobackground.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    font-family: 'Josefin Sans', sans-serif;
 }
+h2 {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Gotu", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
 
 .hamburger-drop-down {
     position: fixed;
@@ -60,7 +71,7 @@ body {
     background-image: url("../images/dropdownborder.png");
     /* bottom: 0; */
     z-index: 10;
-    color: white;
+    color: var(--base-light);
     list-style: none;
     padding-top: 4rem;
 }  
@@ -79,6 +90,13 @@ body {
 .menuItem:hover {
     text-decoration: underline;
     text-decoration-color: #000000;
+}
+.hamburgerIcon {
+    width: 100%
+}
+ul{
+    background-color: var(--white);
+    /* background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));  */
 }
     /* Bee animation goal: to look like it's flying randomly */
     .bee {
@@ -109,30 +127,70 @@ body {
 
 
         .page-header {
-            background-image: url("../images/flowerborder.png");
-            background-repeat: no-repeat;
-            background-size: cover;
             position: relative;
-            padding: 150px;
+            padding: 100px 20px; /* Adjust padding for better spacing */
             text-align: center;
-            margin-bottom: 15px;
+            color: var(--white); /* Ensure text color contrasts with background */
+            margin-bottom: 30px; /* Increase margin for separation from content */
             z-index: 0;
+            border-bottom: 5px solid var(--base-light); /* Add a border for emphasis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+            overflow: hidden; /* Ensure flowers don't overflow the header */
         }
         
         .page-title {
-            font-size: 3rem; /* Adjust size as needed */
-            color: var(--black); /* Use your custom color variable */
-            margin-bottom: 15px;
+            font-family: "Aboreto", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 4rem; /* Increase font size for prominence */
+            color: var(--black); /* Use white color for contrast */
+            margin-bottom: 20px; /* Increase space below the title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
         }
-
-
+        
+        /* Flower bed container */
+        .flower-bed {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px; /* Adjust height as needed */
+            pointer-events: none; /* Ensure flowers don't interfere with other elements */
+        }
+        
+        /* Common flower styles */
+        .flower {
+            position: absolute;
+            bottom: 0;
+            transform-origin: 50% 100%;
+            width: 5%; /* Adjust width as needed */
+            animation: sway 15s infinite; /* Apply the sway animation */
+        }
+        
+        /* Specific positions for each flower */
+        .flower1 { left: 5%; }
+        .flower2 { left: 15%; }
+        .flower3 { left: 25%; }
+        .flower4 { left: 35%; }
+        .flower5 { left: 45%; }
+        .flower6 { left: 55%; }
+        .flower7 { left: 65%; }
+        .flower8 { left: 75%; }
+        .flower9 { left: 85%; }
+        .flower10 { left: 95%; }
+        
+        /* Flower sway animation */
+        @keyframes sway {
+            0%, 100% { transform: rotate(-6deg); }
+            50% { transform: rotate(6deg); }
+        }
 .overlay-img {
     position: relative;
     max-width: 100%;
     max-height: 100%;
     z-index: 1; 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     object-fit: cover;
     background-image: url("../images/Project1.png");
 }
@@ -173,7 +231,6 @@ article {
 }
 
 .overlay3 {
-    background-repeat: no-repeat;
     background-size: contain;
     position: relative;
     padding:40%;
@@ -194,7 +251,10 @@ article {
 
 }
 
-
+article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 {
     border-radius: 50%;
     margin: 10px;
@@ -231,6 +291,39 @@ article {
 
 .btn-primary:hover {
     background-color: var(--purple-dark); 
+}
+
+.page-footer {
+    background-color: var(--base-light);
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+    font-family: "Gotu", sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-images {
+    margin-bottom: 10px; 
+}
+
+.footer-images a {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.footer-images img {
+    width: 40px;
+    height: auto;
+}
+
+.footer-text {
+    color: white;
+    margin: 5px 0; 
 }
 
 /* 
