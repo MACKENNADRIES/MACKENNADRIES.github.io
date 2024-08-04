@@ -29,19 +29,18 @@ body {
 }
 .page-header {
     position: relative;
-    padding: 100px 20px; /* Adjust padding for better spacing */
-    text-align: center;
-    color: var(--white); /* Ensure text color contrasts with background */
-    margin-bottom: 30px; /* Increase margin for separation from content */
-    z-index: 0;
-    border-bottom: 5px solid var(--base-light); /* Add a border for emphasis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
-    overflow: hidden; /* Ensure flowers don't overflow the header */
+
+/* Ensure flowers don't overflow the header */
 }
 .title-container {
+    margin-top: 2%;
+    padding-bottom: 150px; /* Adjust padding for better spacing */
+    text-align: center;
+    color: var(--white); /* Ensure text color contrasts with background */
+    overflow: hidden; 
     align-items: center; /* Center align items vertically */
     gap: 1em; /* Space between titles */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .page-title {
     font-family: "Aboreto", system-ui;
@@ -64,6 +63,10 @@ body {
 }
 /* Flower bed container */
 .flower-bed {
+    margin-bottom: 30px; /* Increase margin for separation from content */
+    z-index: 0;
+    border-bottom: 5px solid var(--base-light); /* Add a border for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
     position: absolute;
     bottom: 0;
     left: 0;
