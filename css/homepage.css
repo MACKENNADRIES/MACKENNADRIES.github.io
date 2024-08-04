@@ -67,20 +67,6 @@ html, body {
     height: 100%;
 }
 @media (max-width: 768px) {
-    .hamburger-drop-down {
-        width: 10%;
-        height: 10%;
-    }
-
-    .menu {
-        padding-top: 2rem;
-    }
-
-    .menuItem {
-        margin: 1rem 2rem;
-        font-size: 1.2rem;
-    }
-
     .bee, .orangetree, .toolshed, .moon, .ladybug {
         width: 20%;
     }
@@ -91,20 +77,6 @@ html, body {
 }
 
 @media (max-width: 480px) {
-    .hamburger-drop-down {
-        width: 15%;
-        height: 15%;
-    }
-
-    .menu {
-        padding-top: 1rem;
-    }
-
-    .menuItem {
-        margin: 0.5rem 1rem;
-        font-size: 1rem;
-    }
-
     .bee, .orangetree, .toolshed, .moon, .ladybug {
         width: 30%;
     }
@@ -138,63 +110,6 @@ body {
     background-repeat: no-repeat; 
     font-family: 'Josefin Sans', sans-serif;
     background-color: #412939;
-}
-.hamburger-drop-down {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    cursor: pointer;
-    width: 2.5%;
-    height: 2.5%;
-}
-.closeIcon {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-}
-.menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-position: center; */
-    /* background-repeat: no-repeat;  */
-    background-image: url("../images/dropdownborder.png");
-    /* bottom: 0; */
-    z-index: 10;
-    color: white;
-    opacity: 70%;
-    list-style: none;
-    padding-top: 4rem;
-}  
-
-.showMenu {
-    transform: translateY(0);
-}
-.menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: #000000;
-    text-decoration: none;
-}
-
-.menuItem:hover {
-    text-decoration: underline;
-    text-decoration-color: #000000;
-}
-ul{
-    background-color: white;
-    /* background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));  */
 }
     /* change placement of bee so its not the same as the first page!! */
     .bee {

@@ -99,65 +99,6 @@ body {
     50% { transform: rotate(6deg); }
 }
 
-.hamburger-drop-down {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    cursor: pointer;
-    width: 2.5%;
-    height: 2.5%;
-}
-.closeIcon {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-}
-.menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-position: center; */
-    /* background-repeat: no-repeat;  */
-    background-image: url("../images/dropdownborder.png");
-    /* bottom: 0; */
-    z-index: 10;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-}  
-
-.showMenu {
-    transform: translateY(0);
-}
-.menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: #000000;
-    text-decoration: none;
-}
-
-.menuItem:hover {
-    text-decoration: underline;
-    text-decoration-color: #000000;
-}
-.hamburgerIcon {
-    width: 100%
-}
-ul{
-    background-color: var(--white);
-    /* background: linear-gradient(to bottom, var(--brand), rgba(179, 115, 92, 0));  */
-}
     /* Bee animation goal: to look like it's flying randomly */
     .bee {
         top: 30%;
