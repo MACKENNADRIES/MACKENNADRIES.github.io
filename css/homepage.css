@@ -85,6 +85,18 @@ html, body {
         width: 20%;
     }
 }
+.intro-header {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    padding: 20px;
+}
+.page-intro {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0;
+}
 
 .page-footer {
     padding: 1rem;

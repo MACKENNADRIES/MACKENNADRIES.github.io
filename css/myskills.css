@@ -29,8 +29,6 @@ body {
     left: 50px;
     padding: 20px;
 }
-
-
 .page-intro {
     font-family: 'Sacramento', cursive;
     font-size: 2rem;
@@ -71,7 +69,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column; 
 }
 
 @media (max-width: 768px) {
@@ -277,10 +275,10 @@ body {
     color: var(--white);
     margin: 5px 0; 
 }
-/* Media Query for Screens 768px and below */
+
 @media (max-width: 768px) {
     .steam {
-        height: 100px; /* Adjust the size for tablets and small desktops */
+        height: 100px;
         width: 100px;
     }
 
@@ -291,16 +289,16 @@ body {
     }
 
     .rake a img {
-            width: 20%; /* Adjust rake size for tablets and small desktops */
+            width: 20%; 
             bottom: 25%;
             left: 5%;
     }
 }
 
-/* Media Query for Screens 480px and below */
+
 @media (max-width: 480px) {
     .steam {
-        height: 75px; /* Further reduce size for mobile devices */
+        height: 75px; 
         width: 75px;
     }
 
@@ -310,7 +308,7 @@ body {
         transform: translate(-50%, -50%);
     }
     .rake a img {
-        width: 15%; /* Further reduce rake size for mobile devices */
+        width: 15%; 
         bottom: 20%;
         left: 10%;
     }
