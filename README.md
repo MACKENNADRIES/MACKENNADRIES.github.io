@@ -36,37 +36,37 @@ In an attempt to learn HTML, CSS and JS I have done a few 'game' tutorials, henc
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
 ####  ExplorePage
-![This is my explore/welcome page](../screenshots/ExplorePage.png)
+![This is my explore/welcome page](screenshots/ExplorePage.png)
 ####  ExplorePageWithButton
-![This is my explore/welcome page with the button features hover state](../screenshots/ExplorePagewithButton.png)
+![This is my explore/welcome page with the button features hover state](screenshots/ExplorePagewithButton.png)
 ####  ExplorePageSmallScreen
-![This is my explore/welcome page on a small screen](../screenshots/ExplorePageSmallScreen.png)
+![This is my explore/welcome page on a small screen](screenshots/ExplorePageSmallScreen.png)
 ####  AboutMe
-![This is my aboutme page](../screenshots/AboutMe.png)
+![This is my aboutme page](screenshots/AboutMe.png)
 ####  AboutMe2
-![This is my aboutme page at a smaller screen and focused on the first element](../screenshots/AboutMe2.png)
+![This is my aboutme page at a smaller screen and focused on the first element](screenshots/AboutMe2.png)
 ####  AboutMe
-![This is my aboutme page](../screenshots/AboutMe.png)
+![This is my aboutme page](screenshots/AboutMe.png)
 ####  CompletedMemoryCards
-![This is the memory card game when everything is matched (I want to put a pop up saying you've won but struggled to get it to work)](../screenshots/CompletedMemoryCards.png)
+![This is the memory card game when everything is matched (I want to put a pop up saying you've won but struggled to get it to work)](screenshots/CompletedMemoryCards.png)
 ####  HomePage
-![This is my Home page which is the second page on the website](../screenshots/HomePage.png)
+![This is my Home page which is the second page on the website](screenshots/HomePage.png)
 ####  HomePageFooter
-![This is my home page with the footer in view](../screenshots/HomePageFooter.png)
+![This is my home page with the footer in view](screenshots/HomePageFooter.png)
 ####  HomePageHoverState
-![This is my home page hover state, with scale and brightness to attract the users attention to click to other pages](../screenshots/HomePageHoverState.png)
+![This is my home page hover state, with scale and brightness to attract the users attention to click to other pages](screenshots/HomePageHoverState.png)
 ####  MemoryCards
-![This is my memory cards game page](../screenshots/MemoryCards.png)
+![This is my memory cards game page](screenshots/MemoryCards.png)
 ####  MySkills
-![This is my skills page](../screenshots/MySkills.png)
+![This is my skills page](screenshots/MySkills.png)
 ####  MySkilsPopUp
-![This shows the pop up that appears when you click on tools in the my skills page](../screenshots/MySkillsPopUp.png)
+![This shows the pop up that appears when you click on tools in the my skills page](screenshots/MySkillsPopUp.png)
 ####  NAV Bar
-![This shows my NAV Bar](../screenshots/NAVBar.png)
+![This shows my NAV Bar](screenshots/NAVBar.png)
 ####  Projects
-![This is my projects page](../screenshots/Projects.png)
+![This is my projects page](screenshots/Projects.png)
 ####  Projects Hover State
-![This is my hover state for the projects page](../screenshots/ProjectsHoverState.png)
+![This is my hover state for the projects page](screenshots/ProjectsHoverState.png)
 
 
 
