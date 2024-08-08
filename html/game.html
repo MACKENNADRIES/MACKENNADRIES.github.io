@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the word!</title>
-    <link rel="stylesheet" href="../css/games.css">
-</head>
-<body>
-    <h1>Guess the word!</h1>
-    <div id="gameBoard"></div>
-    <input type="text" id="guessInput" maxlength="5">
-    <button id="guessButton">Guess</button>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <title>Word Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="../css/game.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Script&family=Playwrite+CU:wght@100..400&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Script&family=Playwrite+CU:wght@100..400&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cardo:ital,wght@0,400;0,700;1,400&family=Gotu&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Script&family=Playwrite+CU:wght@100..400&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/ladybug.png">
+    </head>
+    <body>
+        <h1 id="title">Guess the Word!</h1>
+        <hr>
+        <br>
+        <div id="board">
+        </div>
+        <br>
+        <h1 id="answer"></h1>
+        <button id="hint1">Hint 1</button>
+    <button id="hint2">Hint 2</button>
+    <p id="hintMessage"></p>
+        <div>
+            <img class="m-auto ladybug" src="../images/ladybug.png" alt="ladybug">
+        </div>
+    </body>
+    <script src="../js/game.js"></script>
 </html>
